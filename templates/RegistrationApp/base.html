@@ -11,21 +11,21 @@
             
                 <ul class="nav navbar-nav">
                     <li  class="nav-item active">
-                       <a class="navbar-link" href="{% url 'RegistrationApp:index' %}"> Django </a>
+                       <a class="navbar-link" href="{% url 'RegistrationApp:index' %}"> Django </a> &nbsp;&nbsp;
                     </li>
                     <li  class="nav-item">
-                        <a class="navbar-link" href="{% url 'admin:index' %}"> Admin </a>
+                        <a class="navbar-link" href="{% url 'admin:index' %}"> Admin </a> &nbsp;&nbsp;
                     </li>
                     <li  class="nav-item">
-                        <a class="navbar-link" href="{% url 'RegistrationApp:register' %}"> Register </a>
+                        <a class="navbar-link" href="{% url 'RegistrationApp:register' %}"> Register </a> &nbsp;&nbsp;
                     </li>
                     {% if user.is_authenticated %}
                     <li>
-                        <a class="navbar-link" href="{% url 'logout' %}">Logout</a>
+                        <a class="navbar-link" href="{% url 'logout' %}">Logout</a> &nbsp;&nbsp;
                     </li>
                     {% else %}
                     <li>
-                        <a class="navbar-link" href="{% url 'RegistrationApp:login' %}">Login</a>
+                        <a class="navbar-link" href="{% url 'RegistrationApp:login' %}">Login</a> &nbsp;&nbsp;
                     </li>
                     {% endif %}
                 </ul>

@@ -3,14 +3,15 @@
 
 <div class="jumbotron">
     <h1>Please Login</h1>
-    <form action="{% url 'RegistrationApp:user_login' %}" method="post">
+    <form action="{% url 'RegistrationApp:login' %}" method="post">
         {% csrf_token %}
+        <br>
         <label for="username">Username :</label>
         <input type="text" name="username" placeholder="Enter Username">
-        
-        <label for="password">Username :</label>
+        <br><br>
+        <label for="password">Password :</label>
         <input type="password" name="password" >
-
+        <br><br>
         <input type="submit" name="" value="Login">
 
     </form>

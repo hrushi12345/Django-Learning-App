@@ -29,7 +29,7 @@ def register(request):
             profile.user = user
             
             if 'profilePic' in request.FILES:
-                profile.profile_pic = request.FILES['profilePic']
+                profile.profilePic = request.FILES['profilePic']
                 
             profile.save()
             
@@ -59,7 +59,7 @@ def user_login(request):
         if user:
             if user.is_active:
                 login(request,user)
-                return HttpResponseRedirect(reverse('index'))
+                return HttpResponseRedirect(reverse('RegistrationApp:index'))
             
             else:
                 return HttpResponse('Account not active')
@@ -73,4 +73,4 @@ def user_login(request):
 @login_required
 def user_logout(request):
     logout(request)
-    return HttpResponseRedirect(reverse('RegistrationApp/index.html'))
+    return HttpResponseRedirect(reverse('RegistrationApp:index'))
