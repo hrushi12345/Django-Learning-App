@@ -80,6 +80,17 @@ WSGI_APPLICATION = 'ProjectApp.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
+# pip install psycopg2 - to use postgresql as db
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
+#         'NAME': 'Test_Database',
+#         'USER': 'postgres',
+#         'PASSWORD': 'sa',
+#         'HOST': 'localhost',
+#         'PORT': '5432',
+#     }
+# }
 
 DATABASES = {
     'default': {
