@@ -1,12 +1,12 @@
 from django.urls import path
-from RegistrationApp import views2
+from RegistrationApp import views4
 
 # TEMPLATE URLS!
 app_name = 'RegistrationApp'
 
 urlpatterns = [
-    path('index/',views2.index, name='index'),
-    path('register/', views2.register, name='register'),
-    path('login/', views2.user_login, name='login'),
+    path('index/',views4.index, name='index'),
+    path('register/', views4.register, name='register'),
+    path('login/', views4.user_login, name='login'),
 ]
 #     
