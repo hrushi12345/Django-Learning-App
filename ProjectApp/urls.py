@@ -15,17 +15,18 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+
 # import TemplateApp
 # import StaticApp
 from FormApp import views3
 from RegistrationApp import views4
 
 urlpatterns = [
-    path (r'',views4.index, name='index'), # Home page
-    path ('TemplateApp/', include ('TemplateApp.urls')),
-    path ('StaticApp/', include ('StaticApp.urls')),
-    path ('FormApp/', views3.formView, name='formView'),
-    path ('RegistrationApp/',include ('RegistrationApp.urls')),
-    path ('logout/', views4.user_logout, name='logout'),
-    path ('admin/', admin.site.urls)
+    path(r"", views4.index, name="index"),  # Home page
+    path("TemplateApp/", include("TemplateApp.urls")),
+    path("StaticApp/", include("StaticApp.urls")),
+    path("FormApp/", views3.formView, name="FormApp"),
+    path("RegistrationApp/", include("RegistrationApp.urls")),
+    path("logout/", views4.user_logout, name="logout"),
+    path("admin/", admin.site.urls),
 ]
