@@ -32,3 +32,5 @@ six                  1.16.0
 sqlparse             0.4.2
 tzdata               2021.5
 wheel                0.37.1
+
+# If tables not created even after migrate command. Run =>python manage.py migrate --run-syncdb

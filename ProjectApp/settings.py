@@ -26,7 +26,7 @@ MEDIA_DIR = os.path.join(BASE_DIR,"media")
 SECRET_KEY = 'django-insecure-cn--ty8w1o^!!$or7(yfy1j8y5(mllqf1dr-=tadak52f0%j^o'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True # if False, CSS applied to Admin page will not work
 
 ALLOWED_HOSTS = ['*']
 
